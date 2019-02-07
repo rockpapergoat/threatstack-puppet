@@ -25,6 +25,9 @@ class threatstack::package {
       ensure => 'stopped',
       enable => false
     }
+  $required = [ Class[$::threatstack::repo_class], Service['auditd'] ]
+  } else {
+    $required = Class[$::threatstack::repo_class]
   }
 
   # NOTE: We do not signal the tsagent service to restart because the
@@ -32,7 +35,7 @@ class threatstack::package {
   # installation and upgrades.
   package { $::threatstack::ts_package:
     ensure  => $::threatstack::package_version,
-    require => [Class[$::threatstack::repo_class], service['auditd']]
+    require => $required
   }
 
 }
