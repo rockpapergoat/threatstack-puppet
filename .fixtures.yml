@@ -1,6 +1,8 @@
 fixtures:
   symlinks:
     threatstack: "#{source_dir}"
+  repositories:
+    simp_grub: "https://github.com/simp/pupmod-simp-simp_grub"
   forge_modules:
     stdlib: "puppetlabs/stdlib"
     apt: "puppetlabs/apt"
@@ -10,4 +12,3 @@ fixtures:
     remote_file: "lwf/remote_file"
     concat: "puppetlabs/concat"
     simplib: "simp/simplib"
-    simp_grub: "simp/simp_grub"
