@@ -9,3 +9,4 @@ fixtures:
     archive: "puppet/archive"
     remote_file: "lwf/remote_file"
     concat: "puppetlabs/concat"
+    simplib: "simp/simplib"
