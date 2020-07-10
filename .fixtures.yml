@@ -10,3 +10,4 @@ fixtures:
     remote_file: "lwf/remote_file"
     concat: "puppetlabs/concat"
     simplib: "simp/simplib"
+    simp_grub: "simp/simp_grub"
